@@ -78,56 +78,34 @@ li {
     border: 1px solid black;
 }
 
-.background_dark {
-    background-color: dimgray;
 
-}
-
-.background_light {
-    background-color: floralwhite;
-}
-
-.container {
+.parent_portfolio {
     display: flex;
-    flex: 0 0 0;
-    padding: 10px;
-    justify-content: flex-end;
-    margin-right: 25%;
-    border-style: solid;
-    border-width: 1px;
-}
-
-
-.container_bg {
-    display: flex;
-    flex: 0 0 0;
-    padding: 10px;
-    margin-left: 25%;
-   
-    border-style: solid;
-    border-width: 1px;
-}
-
-.parent {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.img_container {
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px;
+.child_background1 {
+    background-color: dimgray;
+    padding: 100px;
 }
 
-.img_container img {
+.child_background2 {
+    background-color: white;
+    padding: 100px;
+}
+
+.child_background3 {
+    padding:0
+}
+
+#child_img_container {
+    flex: 1 1 0;
+    border: 1px solid black;
+
+}
+
+#child_img_container img {
     width: 100%;
 }
 
-#project_card {
-    flex: 0 0 0;
-    padding: 10px;
-    background-color: #b38282;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-}
