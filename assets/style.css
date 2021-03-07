@@ -11,23 +11,27 @@ header {
     background-color: #797979;
 }
 
+/* Navigation section  */
 header nav ul {
     display: flex;
     justify-content: flex-end;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
 
 }
 
-li {
+nav ul li {
     padding-left: 20px;
     
 }
 
+/* hero section for profile picture and name 
+    Need to figure out how to add image in background
+*/
 .parent_hero {
     display: flex;
     justify-content: center;
@@ -49,6 +53,7 @@ li {
 }
 
 
+/* break section below main hero and above the about section  */
 #sub_header {
    
     background-color: gray;
@@ -56,6 +61,8 @@ li {
     padding: 2%;
 }
 
+
+/* about section  */
 .parent_about {
     display: flex;
     justify-content: space-evenly;
@@ -78,7 +85,9 @@ li {
     border: 1px solid black;
 }
 
-
+/* portfolio section and alternating background colors 
+    Switched flex direction to column for portfolio peices
+*/
 .parent_portfolio {
     display: flex;
     flex-direction: column;
@@ -88,6 +97,7 @@ li {
 .child_background1 {
     background-color: dimgray;
     padding: 100px;
+
 }
 
 .child_background2 {
@@ -95,17 +105,57 @@ li {
     padding: 100px;
 }
 
-.child_background3 {
-    padding:0
+
+/* the portfolio containers for thumbnail and title  */
+.child_portfolio {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    justify-self: flex-end;
+    background-color: blueviolet;
 }
 
-#child_img_container {
+
+/* Sets the justify setting for each portfolio project */
+.child_right {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.child_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    align-items: center;
+    margin-left: 10%;
+}
+
+
+/* Sets the order for portfolio project title and thumbnail */
+.item1 {
+    order: 2;
+}
+
+.item2 {
+    order: -1;
+} 
+
+
+/* this is the section for image above the footer  */
+.child_img_container {
     flex: 1 1 0;
     border: 1px solid black;
-
 }
 
-#child_img_container img {
+.child_img_container img {
     width: 100%;
+}
+
+.child_background3 {
+    padding:0
 }
 
