@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS Instructor Gary said it was ok to use -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="reset" href="./assets/reset.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura">
     <link rel="stylesheet" href="./assets/style.css" />
@@ -11,129 +13,151 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <div>
-                  <li><h1>Adam Natrop</h1></li>
+    <header >
+        <nav class="container-fluid">
+            <div class="row justify-content-between align-items-end">
+                <div class="col-sm-8 ">
+                    <h1>Adam Natrop</h1>
                 </div>
-                <li>About Me</li>
-                <li>My Work</li>
-                <li>Contact</li>
-            </ul>
+            
+                <ul class="nav-links" >
+                    <li >About</li>
+                    <li >Portfolio</li>
+                    <li >Contact</li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-    <!-- GO BACK AND CHANGE ALL LABLES WITH PARENT CHILD RELATIONSHIP FOR FLEX  -->
-    <main>
-        <section class="parent_hero">
-           
-            <div id="child1_hero" class="child_hero">
-                
-                <h2>Web Developer Portfolio</h2>
-            </div>
-            <div id="child2_hero" class="child_hero">
-                <!-- <img src="./assets/images/profile_pic.png" alt="Adam's Picture" /> -->
-            </div>
-        </section>
-        
-        <section id="sub_header">
-            <p>
-               
-            </p>
-        </section>
- 
-        <section id="child_about" class="parent_about" >
+<main class="container-fluid">
+    <section class="row">
+        <div class="col-sm-12 section-1">
+            <h1>
+                Web Development Portfolio
+            </h1>
+        </div>
+    </section>
+    <section class="row justify-content-center section-2">
+        <div class="col-sm-6">
             <h2>About Me</h2>
-            <div>
-                <img src="./assets/images/profile_pic.png" alt="Adam's Profile Picture"/>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi urna, lacinia in pulvinar sit amet, cursus sit amet odio. Quisque et eros erat. Duis eget lobortis dui, vitae elementum nisi. Duis porta eget est vel volutpat. Sed nisl mi, ultricies sit amet scelerisque nec, auctor sed mauris. Proin condimentum tempus tellus eu interdum. Vestibulum venenatis sapien malesuada massa facilisis consequat. Morbi imperdiet interdum efficitur. Cras ac metus eros.</p>
-           
-        </section>
+        </div>
+        <div class="col-sm">    
+            <img src="./assets/images/profile_pic.png" alt="Picture of Adam" />
+        </div>
+        <div class="col-sm">
+            <p>
+                A paragraph devoted to information about myself. It's not very long, because there is really not much to say at this point, as I am still learning web developemnt. The works section might be pretty small.
+            </p>
+        </div>
+    </section>
+    <section class="row section-3">
+        <div class="col-sm">
+            <h2>
+                Portfolio
+            </h2>
+        </div>
         
-        <section class="parent_portfolio">
-            <section class="child_background1">
-                <div id="portfolio_title">
-                    <h1>Portfolio</h1>
-                </div>
-                <section class="child_right" >
-                   
-                    <div class="child_portfolio item2">
-                        <h2>Project 1:</h2>
-                        <h3>Simple Video Works</h3>
-                        <button>Live Site</button>
-                    </div>
-                    <div class="child_portfolio item1" >
-                        <!-- Thumbnail of project  -->
-                        <img src="https://via.placeholder.com/500x500" />
-                    </div>
-                </section>
-            </section>
-            <section class="child_background2">
-                <section class="child_left" >
-                    <div class="child_portfolio item1">
-                        <h2>Project 1</h2>
-                        <h3>Subhead</h3>
-                        <button>Live Site</button>
-                    </div>
-                    <div class="child_portfolio item2">
-                        <!-- Thumbnail of project  -->
-                        <img src="https://via.placeholder.com/500x500" />
-                    </div>
-                </section>
-            </section>
-            <section class="child_background1">
-                <section class="child_right">
-                    <div class="child_portfolio item2">
-                        <h2>Project 1</h2>
-                        <h3>Subhead</h3>
-                        <button>Live Site</button>
-                    </div>
-                    <div class="child_portfolio item1">
-                        <!-- Thumbnail of project  -->
-                        <img src="https://via.placeholder.com/500x500" />
-                    </div>
-                </section>
-            </section>
-            <section class="child_background2">
-                <section class="child_left">
-                    <div class="child_portfolio item1">
-                        <h2>Project 1</h2>
-                        <h3>Subhead</h3>
-                        <button>Live Site</button>
-                    </div>
-                    <div class="child_portfolio item2">
-                        <!-- Thumbnail of project  -->
-                        <img src="https://via.placeholder.com/500x500" />
-                    </div>
-                </section>
-            </section>
-            <section class="child_background3">
-                <div class="child_img_container">
-                <!-- image container  -->
-                    <img src="https://via.placeholder.com/2500x250" />
-                </div>
-            </section>
-        </section>
-
-
-        <section id="contact">
-            <!-- contact container  -->
-        </section> 
-
-    </main>
-
+    </section>
+    <section class="row section-4">
+        <div class="col-sm">
+            <div class="portfolio-project">
+                <h3>
+                    Simple Video Works
+                </h3>
+                <button>Live Site</button>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img src="./assets/images/macro_player.jpg" alt="video player icon" />
+        </div>
+    </section>
+    <section class="row section-5">
+        <div class="col-sm">
+            <div class="portfolio-project">
+                <h3>
+                    Project Title
+                </h3>
+                <button>Live Site</button>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img src="./assets/images/macro_player.jpg" alt="video player icon" />
+        </div>
+        <div class="col-sm">
+            <div class="portfolio-project">
+                <h3>
+                    Project Title
+                </h3>
+                <button>Live Site</button>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img src="./assets/images/macro_player.jpg" alt="video player icon" />
+        </div>
+        <div class="col-sm">
+            <div class="portfolio-project">
+                <h3>
+                    Project Title
+                </h3>
+                <button>Live Site</button>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img src="./assets/images/macro_player.jpg" alt="video player icon" />
+        </div>
+    </section>
+    <section class="row section-5">
+       <div class="col-sm">
+           <img src="https://via.placeholder.com/2500x250" alt="placeholder" />
+       </div>
+    </section>  
+    <section class="row section-6">
+        <div class="col-sm">
+            <div class="contact">
+                <h2>
+                    Contact Me
+                </h2>
+            </div>
+        </div>
+        <div class="col-sm">
+            <form>
+                <label>First Name</label>
+                <input type="text" id="fname" value="placeholder" />
+                <label>Last Name</label>
+                <input type="text" id="lname" value="placeholder" />
+            </form>
+        </div>
+    </section>
+    <section class="row section-7">
+        <div class="col-sm">
+            <div class="background">
+                <img src="https://via.placeholder.com/2500x250" alt="placeholder" />
+            </div>
+        </div>
+    </section>
     <footer>
-        <section>
-            <!-- company info -->
-        </section>
-        <section>
-            <!-- site map  -->
-        </section>
-        <section>
-            <!-- social links  -->
-        </section>
+        <p>
+            My Portfolio Page &copy; 2021
+        </p>
     </footer>
-</body>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body> 
 </html>
