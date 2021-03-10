@@ -90,6 +90,11 @@ header {
     
 }
 
+.section-2 h2 {
+    margin-left: 50px;
+}
+
+
 .section-2 p {
     text-align: left;
 }
@@ -110,14 +115,15 @@ header {
 
 }
 
-.section-3 h2 {
+.section-3 h2, .section-6 h2 {
     padding: 15px;
-    border-left: 2px solid var(--action-color)
+    border-left: 2px solid var(--action-color);
+    margin-left: 50px;
 }
 
 .section-4 {
     padding: 15px;
-    border-top: 5px: solid var(--secondary-color);
+    
 }
 
 .section-5 {
@@ -139,7 +145,8 @@ header {
 }
 
 .contact {
-   
+   padding-left: 50px;
+   padding-right: 50px;
     padding-top:100px;
     padding-bottom: 200px;
 }
