@@ -35,7 +35,9 @@ a:link {
 
 }
 
-
+.links {
+    color: black;
+}
 
 /* nav list formating to one line  */
 nav ul {
