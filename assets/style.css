@@ -2,12 +2,12 @@
     text-decoration: none;
     
 }
-a:link {
+nav a:link {
     text-decoration: none;
     color: var(--white);
   }
   
-  a:visited {
+nav a:visited {
     text-decoration: none;
     color: var(--white);
   }
@@ -37,6 +37,10 @@ a:link {
 
 .links {
     color: black;
+}
+
+.links:hover {
+    color: #fdb035;
 }
 
 /* nav list formating to one line  */
